@@ -8,7 +8,13 @@ const theme = {
     background: {
       main: {
         color: '#f2f3f5',
-        contrastText: 'rgb(41, 47, 53)',
+        contrastText: 'rgb(19, 20, 28)',
+      },
+    },
+    backgroundCard: {
+      main: {
+        color: '#fff',
+        contrastText: 'rgb(31, 33, 43)',
       },
     },
     primary: {

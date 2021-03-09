@@ -8,8 +8,6 @@ const CoverContainer = styled.div`
   
   height: 100vh;
   overflow: hidden;
-
-  background: ${props => props.theme.colors.background.main.contrastText};
 `;
 
 export default CoverContainer;
@@ -30,15 +28,41 @@ export const CoverBox = styled.header`
 `;
 
 export const About = styled.div`
-  flex-direction: column;
   display: flex;
+  flex-direction: column;
 
-  color: ${props => props.theme.colors.background.main.color};
   font-family: "Roboto Slab", serif;
   font-weight: 400;
   font-size: 1rem;
 
   span {
-    margin-bottom: 0.5rem;
+    & + span {
+      margin-top: 0.5rem;
+    }
+  }
+`;
+
+export const Networks = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 1rem;
+  
+  svg {
+    color: ${props => props.theme.colors.secondary.main.contrastText};
+    fill: ${props => props.theme.colors.secondary.main.contrastText};
+    transition: 200ms ease-in-out;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+        color: ${props => props.theme.colors.secondary.main.color};
+        fill: ${props => props.theme.colors.secondary.main.color};
+    }
+
+    & + svg {
+      margin-left: 1rem;
+    }
   }
 `;

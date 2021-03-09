@@ -1,14 +1,15 @@
 import React from 'react';
 import MenuContainer from '../styles/components/Menu';
+import Moon from '../styles/img/Moon';
 import Text from './foundation/Text';
 
 const links = [
   {
-    texto: 'Educação',
+    texto: 'Education',
     url: '/faq',
   },
   {
-    texto: 'Projetos',
+    texto: 'Projects',
     url: '/sobre',
   },
 ];
@@ -46,6 +47,8 @@ export default function Menu() {
             </li>
           )))
         }
+
+        <Moon />
       </div>
     </MenuContainer>
   );

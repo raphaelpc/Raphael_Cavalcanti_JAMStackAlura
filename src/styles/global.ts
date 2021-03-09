@@ -11,7 +11,8 @@ const GlobalStyle = createGlobalStyle`
   body {
     margin: 0;
     padding: 0;
-    background: ${props => props.theme.colors.background.main.color};
+    background: ${props => props.theme.colors.background.main.contrastText};
+    color: ${props => props.theme.colors.background.main.color};
   }
 
   body, input, textarea, button {

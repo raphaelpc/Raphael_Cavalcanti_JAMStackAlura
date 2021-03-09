@@ -60,15 +60,28 @@ const MenuContainer = styled.nav`
         text-align: center;
         display: block;
         text-decoration: none;
-        color: white;
+        color: ${props => props.theme.colors.secondary.main.contrastText};
         transition: 200ms ease-in-out;
 
-        padding-left: 15px;
+        padding-right: 15px;
 
         &:hover,
         &:focus {
             font-weight: 500;
             color: ${props => props.theme.colors.secondary.main.color};
+        }
+      }
+
+      svg {
+        color: ${props => props.theme.colors.secondary.main.contrastText};
+        fill: ${props => props.theme.colors.secondary.main.contrastText};
+        transition: 200ms ease-in-out;
+        cursor: pointer;
+
+        &:hover,
+        &:focus {
+            color: ${props => props.theme.colors.secondary.main.color};
+            fill: ${props => props.theme.colors.secondary.main.color};
         }
       }
     }

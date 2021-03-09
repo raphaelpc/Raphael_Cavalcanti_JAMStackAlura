@@ -1,5 +1,7 @@
 import React from 'react';
-import CoverContainer, { About, CoverBox } from '../styles/components/Cover';
+import CoverContainer, { About, CoverBox, Networks } from '../styles/components/Cover';
+import GitHub from '../styles/img/GitHub';
+import LinkedIn from '../styles/img/LinkedIn';
 import Avatar from './Avatar';
 import Text from './foundation/Text';
 import Menu from './Menu';
@@ -26,10 +28,15 @@ export default function Cover() {
         </Text>
 
         <About>
-          <Text tag="span">Cientista da Computação e desenvolvedor Full-stack.</Text>
+          <Text tag="span">Bachelor in Computer Science. Full stack developer.</Text>
           <Text tag="span">Front-end: NextJs, ReactJs, Typescript, JavaScript e JSP/JSF.</Text>
           <Text tag="span">Back-end: Java.</Text>
         </About>
+
+        <Networks>
+          <GitHub />
+          <LinkedIn />
+        </Networks>
       </CoverBox>
     </CoverContainer>
   );

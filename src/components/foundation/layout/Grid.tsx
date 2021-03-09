@@ -60,6 +60,7 @@ const Col = styled.div<ColProps>`
     ${propToStyle('alignItems')}
     ${propToStyle('justifyContent')}
     ${propToStyle('flexDirection')}
+    ${propToStyle('textAlign')}
 `;
 
 const Grid = {
