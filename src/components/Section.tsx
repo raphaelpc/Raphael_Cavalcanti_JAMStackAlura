@@ -1,19 +1,14 @@
 import React from 'react';
+import Card, { CardProps } from './Card';
 import Grid from './foundation/layout/Grid';
 import Text from './foundation/Text';
 
-interface SectionItem {
-  title: string;
-  description: string;
-  image: string;
-}
-
 export interface SectionProps {
   title: string;
-  items: SectionItem[];
+  items: CardProps[];
 }
 
-export default function Section({ title }: SectionProps) {
+export default function Section({ title, items }: SectionProps) {
   return (
     <Grid.Container
       marginTop={{ xs: '10px', sm: '0px' }}
@@ -35,13 +30,12 @@ export default function Section({ title }: SectionProps) {
       </Grid.Row>
 
       <Grid.Row>
-        <Grid.Col value={{ xs: 12, sm: 6 }}>
-          <h1>Education</h1>
-        </Grid.Col>
-
-        <Grid.Col value={{ xs: 12, sm: 6 }}>
-          <h1>Education</h1>
-        </Grid.Col>
+        {items.map(item => (
+          <Grid.Col value={{ xs: 12, lg: 6 }}>
+            {/* eslint-disable-next-line react/jsx-props-no-spreading */}
+            <Card {...item} />
+          </Grid.Col>
+        ))}
       </Grid.Row>
     </Grid.Container>
   );

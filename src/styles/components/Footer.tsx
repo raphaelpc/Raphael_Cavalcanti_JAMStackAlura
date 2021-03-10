@@ -2,13 +2,11 @@ import styled from 'styled-components';
 
 const FooterContainer = styled.footer`
   background: black;
+  font-family: "Roboto Slab", serif;
+  text-align: center;
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  margin-top: 3rem;
-  padding: 0.5rem
+  padding: 0.5rem;
+  margin-top: 2rem;
 `;
 
 export default FooterContainer;

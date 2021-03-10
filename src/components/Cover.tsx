@@ -28,9 +28,9 @@ export default function Cover() {
         </Text>
 
         <About>
-          <Text tag="span">Bachelor in Computer Science. Full stack developer.</Text>
-          <Text tag="span">Front-end: NextJs, ReactJs, Typescript, JavaScript e JSP/JSF.</Text>
-          <Text tag="span">Back-end: Java.</Text>
+          <Text>Bachelor in Computer Science. Full stack developer.</Text>
+          <Text>Front-end: NextJs, ReactJs, Typescript, JavaScript e JSP/JSF.</Text>
+          <Text>Back-end: Java.</Text>
         </About>
 
         <Networks>
