@@ -7,9 +7,6 @@
   - [yarn build](#yarn-build)
   - [yarn start](#yarn-start)
 - [Before running](#before-running)
-- [How this project was created](#how-this-project-was-created)
-- [Versioning your application](#versioning-your-application)
-- [Publishing your application](#publishing-your-application)
 
 
 ## About
